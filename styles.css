@@ -35,6 +35,10 @@ footer {
   width: 100%;
 }
 
+p {
+  font-size: 1.05em;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -102,23 +106,18 @@ section {
   flex-direction: column;
 }
 
-.stats div {
+.stats > div {
   flex: 1;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 .stats div i {
-  font-size: 1 rem;
+  font-size: 1.4em;
 }
 
-.streakContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-}
-
-.streakContainer div {
-  flex-direction: row;
+.stats div div {
+  display: grid;
+  place-items: center;
+  min-width: 40px;
 }
