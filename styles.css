@@ -68,7 +68,7 @@ section,
 .nameContainer {
   display: flex;
   flex-direction: column;
-  /* gap: 16px; */
+  gap: 16px;
 }
 
 main {
@@ -82,6 +82,10 @@ section {
 
 .nameContainer {
   gap: 8px
+}
+
+.nameContainer h1 {
+  font-size: 2.5em;
 }
 
 .statsContainer {
@@ -129,12 +133,16 @@ section {
 .aboutMe h4 {
   color: var(--secondary-color);
   line-height: 1.5em;
+  padding-top: 15px;
+  align-items: center;
+  /* padding-bottom:15px; */
+
 }
 
-.emailContainer a{
+.emailContainer a {
   display: flex;
   align-items: center;
-  padding-left:40%;
+  padding-left: 40%;
 }
 
 .outreach {
@@ -160,7 +168,7 @@ section {
 
 
 .headerText {
-  font-size:2em;
+  font-size: 2em;
   display: flex;
   margin-bottom: 24px;
   flex-direction: column;
@@ -184,11 +192,10 @@ section {
   gap: 14px;
 }
 
-
 .projectItem>div:last-child {
   aspect-ratio: 16/9;
-  max-width:40%;
-  overflow:hidden;
+  max-width: 40%;
+  overflow: hidden;
   border-radius: 8px;
 }
 
@@ -204,7 +211,7 @@ section {
   gap: 24px
 }
 
-.linkItem{
+.linkItem {
   display: flex;
   flex-direction: row !important;
   align-items: center;
@@ -222,16 +229,10 @@ section {
 
 }
 
-/* .linkItem div {
-  font-size: 1.4em;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  color: var(--primary-color)
-}  */
-
 
 @media (min-width: 640px) {
+
+
   .statsContainer {
     flex-direction: row;
   }
@@ -244,4 +245,70 @@ section {
     /* width: 80%; */
     margin-right: auto;
   }
+}
+
+@media (max-width: 640px) {
+
+  .section {
+    gap: 0px;
+  }
+
+  .nameContainer h1 {
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nameContainer p {
+    font-size: 0.95em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .statsContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .imageContainer {
+    max-width: 120%;
+  }
+
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutMe p {
+    display: flex;
+    font-size: small;
+  }
+
+  
+  .projectItem {
+    flex-direction:row;
+    gap: 24px;    
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .projectDescription{
+    height:auto;
+    width:100%;
+  }
+
+  /* .projectItem a img {
+    display:flex;
+    width:fit-content;
+    height: auto;
+    object-fit: cover;
+    align-items: center;
+  } */
+
 }
