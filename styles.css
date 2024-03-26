@@ -170,38 +170,46 @@ section {
   gap: 14px;
 }
 
-/* .projectItem div p {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-} */
 
-.projectItem div:last-child {
+.projectItem>div:last-child {
   aspect-ratio: 16/9;
   max-width:40%;
   overflow:hidden;
-
+  border-radius: 8px;
 }
 
-.projectItem div:last-child img {
+.projectItem>div:last-child img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* .linkContainer {
+.linkContainer {
   display: flex;
   align-items: center;
   gap: 24px
 }
 
-.linkItem div {
+.linkItem{
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 18px !important;
+  color: var(--primary-color)
+}
+
+.linkItem p {
+  font-size: 0.9em;
+
+}
+
+/* .linkItem div {
   font-size: 1.4em;
   display: flex;
   align-items: center;
   gap: 14px;
   color: var(--primary-color)
-} */
+}  */
 
 
 @media (min-width: 640px) {
