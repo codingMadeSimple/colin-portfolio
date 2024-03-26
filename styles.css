@@ -71,6 +71,7 @@ section,
 
 main {
   gap: 64px;
+  padding-bottom: 64px;
 }
 
 section {
@@ -145,14 +146,23 @@ section {
   gap: 24px;
 }
 
+/* .reverse{
+  flex-direction: row-reverse;
+  gap: 12px;
+} */
+
 .headerText{
   margin-bottom: 24px;
 }
 
 .projectItem{
   display:flex;
-  align-items: stretch;
+  /* align-items: center; */
   gap: 24px;
+}
+
+.reverse{
+  flex-direction: row-reverse;
 }
 
 .projectItem div:first-child{
@@ -161,14 +171,22 @@ section {
   gap: 24px;
 }
 
+.projectItem div p{
+  display:flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .projectItem div :last-child {
   aspect-ratio: 16/9;
   max-width: 100%;
+  min-width: 100%;
   overflow: hidden;
   border-radius:8px;
 }
 
 .projectItem div :last-child img{
+  display:flex;
   width: 100%;
   height: 100%;
   object-fit: cover;
